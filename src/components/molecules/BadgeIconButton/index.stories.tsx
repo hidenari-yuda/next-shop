@@ -1,10 +1,10 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react'
-import BadgeIconButton from './index'
 import {
   PersonIcon,
   SearchIcon,
   ShoppingCartIcon,
-} from 'components/atoms/IconButton'
+} from '../../../components/atoms/IconButton'
+import BadgeIconButton from './index'
 
 export default {
   title: 'Molecules/BadgeIconButton',

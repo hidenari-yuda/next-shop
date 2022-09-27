@@ -6,8 +6,8 @@ import {
   RenderResult,
 } from '@testing-library/react'
 import { ThemeProvider } from 'styled-components'
+import { theme } from '../../../themes'
 import ProductForm from '.'
-import { theme } from 'themes'
 
 describe('ProductForm', () => {
   let renderResult: RenderResult
