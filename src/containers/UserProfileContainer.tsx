@@ -1,6 +1,6 @@
-import UserProfile from 'components/organisms/UserProfile'
-import useUser from 'services/users/use-user'
 import type { ApiContext, User } from 'types'
+import UserProfile from '../components/organisms/UserProfile'
+import useUser from '../services/users/use-user'
 
 const context: ApiContext = {
   apiRootUrl: process.env.NEXT_PUBLIC_API_BASE_PATH || '/api/proxy',

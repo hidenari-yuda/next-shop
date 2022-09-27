@@ -1,9 +1,9 @@
 import { ComponentMeta } from '@storybook/react'
-import GlobalSpinner from './index'
-import Button from 'components/atoms/Button'
 import GlobalSpinnerContextProvider, {
   useGlobalSpinnerActionsContext,
-} from 'contexts/GlobalSpinnerContext'
+} from '../../../contexts/GlobalSpinnerContext'
+import Button from '../../atoms/Button'
+import GlobalSpinner from './index'
 
 export default {
   title: 'organisms/GlobalSpinner',

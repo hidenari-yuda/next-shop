@@ -1,13 +1,13 @@
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next'
 import Link from 'next/link'
-import Text from 'components/atoms/Text'
-import Box from 'components/layout/Box'
-import Flex from 'components/layout/Flex'
-import ProductCard from 'components/organisms/ProductCard'
-import ProductCardCarousel from 'components/organisms/ProductCardCarousel'
-import Layout from 'components/templates/Layout'
-import getAllProducts from 'services/products/get-all-products'
-import { ApiContext, Product } from 'types'
+import Text from '../components/atoms/Text'
+import Box from '../components/layout/Box'
+import Flex from '../components/layout/Flex'
+import ProductCard from '../components/organisms/ProductCard'
+import ProductCardCarousel from '../components/organisms/ProductCardCarousel'
+import Layout from '../components/templates/Layout'
+import getAllProducts from '../services/products/get-all-products'
+import { ApiContext, Product } from '../types'
 
 type HomePageProps = InferGetStaticPropsType<typeof getStaticProps>
 
@@ -54,27 +54,6 @@ const HomePage: NextPage<HomePageProps> = ({
             </Text>
             <Text as="h1" marginTop={0} color="white" variant="extraLarge">
               お気に入りのアイテムを見つけよう
-            </Text>
-          </Box>
-          <Box width="100%">
-            <Text as="p" color="white" variant="mediumLarge">
-              Gihyo
-              C2Cは実践的なNext.jsアプリケーション開発で使われるデモアプリです。モックサーバを使用しています。
-              ソースコードは
-              <Text
-                as="a"
-                style={{ textDecoration: 'underline' }}
-                target="_blank"
-                href="https://github.com/gihyo-book/ts-nextbook-app"
-                variant="mediumLarge"
-                color="white"
-              >
-                こちら
-              </Text>
-              のGithubからダウンロードできます。
-            </Text>
-            <Text as="p" color="white" variant="mediumLarge">
-              このアプリはTypeScript/Next.jsで作成されており、バックエンドのモックAPIはjson-serverが使用されています。
             </Text>
           </Box>
         </Flex>

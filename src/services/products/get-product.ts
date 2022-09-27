@@ -1,5 +1,5 @@
 import type { ApiContext, Product } from 'types'
-import { fetcher } from 'utils'
+import { fetcher } from '../../utils'
 
 export type GetProductParams = {
   /**
